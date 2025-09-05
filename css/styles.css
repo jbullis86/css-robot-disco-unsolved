@@ -7,7 +7,7 @@ body {
 .robot-container {
   background-color: #21222c;
   position: relative;
-top: 300px;
+  top: 300px;
 
 }
 
@@ -28,11 +28,11 @@ top: 300px;
 }
 
 .robot-eye-left {
-     height: 10%;
+  height: 10%;
   width: 10%;
   background-color: #BF0D0D;
   border-radius: 50%; 
-      border-style: solid;
+  border-style: solid;
   border-color: rgb(22, 22, 22);
   position: relative;
   left: 250px;
@@ -40,13 +40,13 @@ top: 300px;
 }
 
 .robot-eye-right {
-    height: 10%;
+  height: 10%;
   width: 10%;
   background-color: #BF0D0D;
   border-radius: 50%; 
-    border-style: solid;
+  border-style: solid;
   border-color: rgb(22, 22, 22);
-    position: relative;
+  position: relative;
   left: 650px;
   top: 100px;
 }
@@ -57,7 +57,7 @@ top: 300px;
 	border-top: 50px solid transparent;
 	border-right: 100px solid #585252;
 	border-bottom: 50px solid transparent;
-    position: relative;
+  position: relative;
   left: 1475px;
   top: -200px;
 }
@@ -69,9 +69,13 @@ top: 300px;
 	border-top: 50px solid transparent;
 	border-left: 100px solid #585252;
 	border-bottom: 50px solid transparent;
-    position: relative;
-    left: 425px;
-    top: -300px;
+  position: relative;
+  left: 425px;
+  top: -300px;
+}
+.robot-ear-right:hover{
+  transform: translateX(50px); /* Moves it 50px to the right */
+  transition: transform 0.3s ease;
 }
 
 .robot-nose {
@@ -80,7 +84,7 @@ top: 300px;
 	border-right: 50px solid transparent;
 	height: 0;
 	width: 175px;
-       position: relative;
+  position: relative;
   left: 415px;
   top: 125px;
 }
@@ -111,19 +115,19 @@ top: 300px;
 }
 
 .robot-hair-style {
-   width: 500px;
+  width: 500px;
   height: 50px;
   border: 5px solid black;
   border-radius: 0 0 175px 175px;
   transform: rotate(180deg);
   background-color: transparent;
-   position: relative;
-    left: 750px;
-    top: -615px;
+  position: relative;
+  left: 750px;
+  top: -615px;
 }
 
 .robot-hair-one {
- height: 60px;
+   height: 60px;
   width: 90px;
   background-color: #c43131;
   display: inline-block;
