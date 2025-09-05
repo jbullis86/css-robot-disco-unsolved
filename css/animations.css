@@ -13,22 +13,21 @@
     animation: mvc 10s infinite alternate;
 }
 
-.robot-ear-right:hover{
-    transform: opacity(0);
-}
-
 .robot-nose{
 animation: orbitAround 5s infinite;
 }
 
 .robot-teeth{
-
+    animation: wavyBorder 3s infinite ease-in-out;
 }
 
 .robot-tooth{
    animation: badteeth 10s infinite;
 }
 
+.robot-hair-style{
+    animation: tipBackAndForth 2s infinite ease-in-out;
+}
 
 .robot-hair-one{
     animation: sway 5s infinite alternate;
@@ -98,8 +97,8 @@ animation: orbitAround 5s infinite;
     0% {transform: translateY(0)}
     25%{transform: translateY(-5px)}
     50%{transform:translateY(0)}
-    75%{transform:translatY(5px)}
-    100%{transform: translateY(0);}
+    75%{transform: translateY(5px)}
+    100%{transform: translateY(0)}
 }
 @keyframes orbitAround {
   0% { transform: rotate(0deg) translateX(60px) rotate(0deg); }
@@ -162,4 +161,28 @@ animation: orbitAround 5s infinite;
         left: 1475px;
         top: -200px;
       }
+}
+@keyframes wavyBorder {
+  0% {
+    border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+  }
+  25% {
+    border-radius: 60% 40% 40% 60% / 60% 60% 40% 40%;
+  }
+  50% {
+    border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+  }
+  75% {
+    border-radius: 60% 40% 40% 60% / 60% 60% 40% 40%;
+  }
+  100% {
+    border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+  }
+}
+@keyframes tip{
+   0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(18deg); }
+  50%  { transform: rotate(0deg); }
+  75%  { transform: rotate(-18deg); }
+  100% { transform: rotate(0deg); }
 }
